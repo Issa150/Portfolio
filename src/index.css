@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme {
+
+    --shadow-my-sm: 0 0 10px rgba(0, 0, 0, 0.3);
+    --color-my-theme: #fff9de12; /* this is transparent color code*/
+    --color-my-theme-border: #fff9de31;
+
+    --color-my-theme-solid: #32382d;
+
+
+    --breakpoint-my-sm: 640px;
+    --breakpoint-my-md: 850px;
+    --breakpoint-my-lg: 1000px;
+}
+
