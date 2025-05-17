@@ -11,7 +11,7 @@ export default function ProjectsSection() {
         <div className="mt-6">
 
 
-          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg p-4 mb-4">
+          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg sm:p-4 p-0 mb-4">
             <img className="max-w-24 aspect-square object-cover" loading="lazy" src="/assets/imgs/projects/PHP-blog/Screenshot 2025-05-05 154835.png" alt="" />
             <div>
               <div className="flex justify-between items-center">
@@ -32,7 +32,7 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg p-4 mb-4">
+          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg sm:p-4 p-0 mb-4">
             <img className="max-w-24 aspect-square object-cover" loading="lazy" src="/assets/imgs/projects/PHP-blog/Screenshot 2025-05-05 154835.png" alt="" />
             <div>
               <div className="flex justify-between items-center">
@@ -53,7 +53,7 @@ export default function ProjectsSection() {
           </div>
 
 
-          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg p-4 mb-4">
+          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg sm:p-4 p-0 mb-4">
             <img className="max-w-24 aspect-square object-cover" loading="lazy" src="/assets/imgs/projects/PHP-blog/Screenshot 2025-05-05 154835.png" alt="" />
             <div>
               <div className="flex justify-between items-center">
@@ -75,7 +75,7 @@ export default function ProjectsSection() {
 
 
 
-          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg p-4 mb-4">
+          <div className="flex gap-3 hover:bg-[#47474444] transition duration-300 rounded-lg sm:p-4 p-0 mb-4">
             <img className="max-w-24 aspect-square object-cover" loading="lazy" src="/assets/imgs/projects/PHP-blog/Screenshot 2025-05-05 154835.png" alt="" />
             <div>
               <div className="flex justify-between items-center">
