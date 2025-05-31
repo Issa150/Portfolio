@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="min-h-screen max-w-[1000px] mx-auto grid my-md:grid-cols-[min-content_1fr] grid-cols-1 justify-items-center gap-2">
       <NavBar /> {/*this is positioned fixed */}
       <Asider />
-      <main className="my-md:pt-20 w-[95%] lg:w-12/12">
+      <main className="my-md:pt-20 w-[95%] sm:w-full lg:w-12/12">
         <Outlet /> 
       </main>
     </div>

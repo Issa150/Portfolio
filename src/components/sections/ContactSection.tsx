@@ -47,7 +47,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="mb-20">
+    <section className="---mb-20">
       <h2 className="my-sm:text-7xl text-5xl font-bold mb-8">TRAVAILLONS <span className="text-green-600">ENSEMBLE</span></h2>
 
       <div className="max-w-lg p-6 bg-my-theme rounded-lg shadow-lg">

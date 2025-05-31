@@ -8,29 +8,32 @@ export default function HeroSection() {
   return (
     <>
       <section className="mb-20">
-        <h2 className="my-sm:text-[clamp(2rem,80vw,3.8rem)] text-5xl font-bold mb-4">
+        {/* <h2 className="my-sm:text-[clamp(2rem,80vw,3.8rem)] sm:text-5xl text-4xl font-bold mb-4"> */}
+        <h2 className="my-sm:text-7xl sm:text-5xl text-4xl font-bold mb-4 text-gray-400">
           Développeur  Web <br /> <span className="text-yellow-400">JavaScript</span>
         </h2>
 
-        <p className="mt-13 text-2xl">
+        <p className="sm:mt-13 mt-5 sm:text-2xl text-xl">
           {/* Je conçois des produits numériques complets, mêlant des expériences utilisateur intuitives à des solutions back-end robustes et évolutives. Mon objectif : donner vie aux idées avec précision technique, design et performance.           */}
           {/* Créateur de solutions web intuitives et performantes */}
           Créateur de solutions web intuitives et performantes, alliant design, technique et innovation.
         </p>
 
-        <div className="flex my-lg:gap-25 my-sm:gap-15 gap-10 mt-5">
-          <div>
-            <h3 className="text-3xl font-bold mt-6 mb-3">+4</h3>
-            <p>CODING</p>
+        <div className="grid sm:justify-between justify-center sm:grid-cols-3 --my-lg:gap-25 ---my-sm:gap-15 gap-1 mt-5">
+
+          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">2024</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Développeur Web & <br /> Web Mobile <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac+2</span></p>
           </div>
 
-          <div>
-            <h3 className="text-3xl font-bold mt-6 mb-3">2024</h3>
-            <p>Développeur Web & <br /> Web Mobile <br /> Bac+2</p>
+          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">2025</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Concepteur Développeur <br /> d’Application <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac +3/4</span></p>
           </div>
-          <div>
-            <h3 className="text-3xl font-bold mt-6 mb-3">2025</h3>
-            <p>Concepteur Développeur <br /> d’Application <br />Bac +3/4</p>
+
+          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">Bientôt...</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Développeur Full-Stack <br /> Angulare + Java <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac +5</span></p>
           </div>
         </div>
 

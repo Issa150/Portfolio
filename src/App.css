@@ -19,5 +19,5 @@ body::after{
     opacity: 1; /* Adjust opacity here */
     z-index: -1;
     
-    background: #fad6ff8b;
+    /* background: #fad6ff8b; */
 }
