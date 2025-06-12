@@ -13,7 +13,11 @@
     --color-my-theme-solid: #4c2d51;
 
 
+    --breakpoint-my-xs: 380px;
     --breakpoint-my-sm: 640px;
     --breakpoint-my-md: 850px;
+    --breakpoint-my-xmd: 700px;
     --breakpoint-my-lg: 1000px;
+    --breakpoint-my-14: 1280px; 
+    --breakpoint-my-15: 1530px;
 }

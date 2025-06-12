@@ -9,7 +9,7 @@ export default function HeroSection() {
     <>
       <section className="mb-20">
         {/* <h2 className="my-sm:text-[clamp(2rem,80vw,3.8rem)] sm:text-5xl text-4xl font-bold mb-4"> */}
-        <h2 className="my-sm:text-7xl sm:text-5xl text-4xl font-bold mb-4 text-gray-400">
+        <h2 className="text-4xl my-xs:text-[40px] md:text-6xl lg:text-7xl  font-bold mb-4 text-gray-400">
           Développeur  Web <br /> <span className="text-yellow-400">JavaScript</span>
         </h2>
 
@@ -19,7 +19,7 @@ export default function HeroSection() {
           Créateur de solutions web intuitives et performantes, alliant design, technique et innovation.
         </p>
 
-        <div className="grid sm:justify-between justify-center sm:grid-cols-3 --my-lg:gap-25 ---my-sm:gap-15 gap-1 mt-5">
+        <div className="grid sm:justify-between grid-cols-1 sm:grid-cols-3 --my-lg:gap-25 ---my-sm:gap-15 gap-1 mt-5">
 
           <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
             <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">2024</h3>

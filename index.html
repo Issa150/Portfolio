@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon-2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="rJaY9fFfCFp7MOwdPlYJpC0mMgB1tY0w24ZKok9-xsM" />
+    <meta name="google-site-verification" content="-uRNm7SVzYc_r3-nyNRQ32jBxbZAXo107GwLLrQco10" />
     <meta
       name="description"
       content="Issa Jafari's portfolio showcasing front-end, back-end, and UI/UX projects."
@@ -37,6 +37,20 @@
   </head>
   <body>
     <div id="root"></div>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <select name="workType">
+      <option value="single-work">Travail unique</option>
+      <option value="hire">Embauche</option>
+    </select>
+    <select name="priceRange">
+        <option value="<2000">Moins de 2000€</option>
+        <option value="2000-5000">2000€ - 5000€</option>
+        <option value="5000-10000">5000€ - 10000€</option>
+    </select>
+    <textarea name="message"></textarea>
+    </form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

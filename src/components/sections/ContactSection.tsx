@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-//  Validation Schema using Yup
+// Validation Schema using Yup
 const schema = yup.object().shape({
   name: yup.string().optional(),
   email: yup.string().email("Email invalide").required("Email est requis"),
@@ -31,8 +31,9 @@ export default function ContactSection() {
 
   const onSubmit = async (data: any) => {
     try {
-      // Simulate a successful form submission (replace with your actual submission logic)
-      console.log("Form data submitted:", data);
+      // Netlify will intercept the form submission because of data-netlify="true" and method="POST".
+      // The console.log and state updates here are for client-side feedback only.
+      console.log("Form data submitted (client-side):", data);
       setSubmissionSuccess(true);
       reset(); // Clear the form after successful submission
 
@@ -41,7 +42,7 @@ export default function ContactSection() {
         setSubmissionSuccess(false);
       }, 3000);
     } catch (error) {
-      console.error("Form submission failed:", error);
+      console.error("Form submission failed (client-side error):", error);
       // Optionally, set an error state and display an error message to the user
     }
   };
@@ -59,7 +60,28 @@ export default function ContactSection() {
             <span>Message envoyé avec succès !</span>
           </div>
         )}
-        <form method="POST" action="/success" data-netlify="true" onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        {/*
+          IMPORTANT for Netlify:
+          - method="POST" and data-netlify="true" enable Netlify's form processing.
+          - name="contact" identifies the form in Netlify's admin panel.
+          - The hidden input name="form-name" helps Netlify correctly link the submission
+            to the static form definition.
+          - The hidden input name="bot-field" is for Netlify's honeypot spam protection.
+            You MUST also include netlify-honeypot="bot-field" in your public/index.html hidden form.
+        */}
+        <form
+          method="POST"
+          action="/success"
+          data-netlify="true"
+          name="contact" // This name must match the 'name' in your public/index.html hidden form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6"
+        >
+          {/* Netlify requires a hidden input named 'form-name' for JavaScript-rendered forms */}
+          <input type="hidden" name="form-name" value="contact" />
+          {/* Netlify Honeypot for spam prevention. 'bot-field' is the default name. */}
+          <input type="hidden" name="bot-field" />
+
           {/* Name & Email */}
           <div className="grid grid-cols-1 my-sm:grid-cols-2 gap-4">
             <div className="form-control">
@@ -90,6 +112,7 @@ export default function ContactSection() {
             <div className="form-control">
               <label className="label">Budget</label>
               <select {...register("priceRange")} className="select select-primary w-full bg-my-theme-solid">
+                {/* Ensure these values match the options in your hidden HTML form */}
                 <option value="<2000">Moins de 2000€</option>
                 <option value="2000-5000">2000€ - 5000€</option>
                 <option value="5000-10000">5000€ - 10000€</option>
