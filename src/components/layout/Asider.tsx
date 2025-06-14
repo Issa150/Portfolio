@@ -1,4 +1,4 @@
-import { EnvelopeIcon, PhoneIcon, MapPinIcon, DocumentArrowDownIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon,  MapPinIcon, DocumentArrowDownIcon } from "@heroicons/react/24/solid";
 
 export default function Asider() {
     return (
