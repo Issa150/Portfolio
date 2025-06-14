@@ -1,4 +1,4 @@
-import { useEffect } from "react"; 
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm as useFormspree, ValidationError } from "@formspree/react";
@@ -6,26 +6,24 @@ import * as yup from "yup";
 
 // ---
 // Defining the TypeScript interface for your form data.
-// This matches the structure of your Yup validation schema.
 interface FormData {
-  name?: string; 
+  name?: string;
   email: string;
   workType: string;
-  priceRange?: string | null; 
+  priceRange?: string | null;
   message: string;
 }
 // ---
 
 // Validation Schema using Yup
-const schema: yup.ObjectSchema<FormData> = yup.object().shape({ 
+const schema: yup.ObjectSchema<FormData> = yup.object().shape({
   name: yup.string().optional(),
   email: yup.string().email("Email invalide").required("Email est requis"),
-  workType: yup.string().required("Type de travail est requis"),
+  workType: yup.string().required("Type de travail is required"), // Changed for consistency if you meant to apply here too
   priceRange: yup
     .string()
     .nullable()
     .when("workType", (workType, schema) =>
-      // Ensure workType is treated as an array of strings as per yup.when callback signature
       (workType as string[])[0] === "single-work" ? schema.required("Veuillez choisir un budget") : schema
     ),
   message: yup.string().min(10, "Le message doit contenir au moins 10 caractères").required("Message requis"),
@@ -33,52 +31,52 @@ const schema: yup.ObjectSchema<FormData> = yup.object().shape({
 
 export default function ContactSection() {
   // Initialize Formspree's useForm hook with your form ID
-  //@ts-ignore
-  const [formspreeState, formspreeHandleSubmit] = useFormspree("xqabqnjo"); 
+  //@ts-ignore - This @ts-ignore is okay if you're sure about the type, but it's often a sign of underlying type mismatch.
+  // In a clean setup, if FormData is consistent, you might not need this.
+  const [formspreeState, formspreeHandleSubmit] = useFormspree("xqabqnjo");
 
-  
   const {
     register,
     handleSubmit,
     watch,
     reset,
     formState: { errors },
-  } = useForm<FormData>({ 
+  } = useForm<FormData>({
     resolver: yupResolver(schema),
     defaultValues: {
       workType: "",
-      name: "", 
+      name: "",
       priceRange: null,
       message: "",
       email: "",
     },
   });
-  // ---
 
   // Track work type selection for conditional price field
   const selectedWorkType = watch("workType");
 
   // ---
   // This function is called by react-hook-form's handleSubmit after client-side validation passes.
-  // The 'data' parameter is now correctly typed as FormData.
-  const onClientSideValidatedSubmit = async (data: FormData) => { // <--- 'data' is now correctly typed
+  // It MUST explicitly call Formspree's submission handler to send the data.
+  const onClientSideValidatedSubmit = async (data: FormData) => {
     console.log("Form data valid (client-side):", data);
-    // No explicit fetch or other submission logic here.
-    // The form's onSubmit={handleSubmit(onClientSideValidatedSubmit)} combined
-    // with Formspree's useForm hook (which watches the form) handles the actual sending.
+
+    // *** THIS IS THE MISSING/CRITICAL STEP: Explicitly call Formspree's submit handler ***
+    await formspreeHandleSubmit(data as any); // This sends the data to https://formspree.io/f/xqabqnjo
+    // ---
   };
-  // ---
 
   // ---
   // Use useEffect for side effects like resetting the form.
   // It runs when formspreeState.succeeded changes.
   useEffect(() => {
     if (formspreeState.succeeded) {
+      console.log("Formspree submission SUCCEEDED! Resetting form...");
       setTimeout(() => {
         reset(); // Reset the form fields
       }, 100); // Small delay for better UX
     }
-  }, [formspreeState.succeeded, reset]); // <--- Correct dependencies for useEffect
+  }, [formspreeState.succeeded, reset]);
   // ---
 
   return (
@@ -113,7 +111,6 @@ export default function ContactSection() {
               <label className="label">Email</label>
               <input {...register("email")} type="email" className="input input-primary w-full bg-my-theme border-my-theme-border" />
               <p className="text-red-500 text-sm">{errors.email?.message}</p>
-              {/* Formspree ValidationError for email field (for server-side errors) */}
               <ValidationError
                 prefix="Email"
                 field="email"
