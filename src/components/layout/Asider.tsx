@@ -30,10 +30,10 @@ export default function Asider() {
                         </div>
 
                         {/* Phone Number */}
-                        <div className="flex items-center gap-2 mt-2">
+                        {/* <div className="flex items-center gap-2 mt-2">
                             <PhoneIcon className="w-5 h-5 --text-my-theme-icon" />
                             <p className="text-sm"><a href="tel:+33780232854">+33 78 02 32 854</a></p>
-                        </div>
+                        </div> */}
 
                         {/* Linkedin */}
                         <div className="flex items-center gap-2 mt-2">
