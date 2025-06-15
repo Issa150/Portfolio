@@ -38,10 +38,12 @@ export default function ServicesSection() {
               <li className="flex gap-4 text-white text-sm font-semibold mb-2">
                 <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="SCSS" src="/assets/imgs/Tech-stack/scss.jpg" alt="issa Jafari - tech stack - SCSS" />
                 <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React.js" src="/assets/imgs/Tech-stack/react.webp" alt="issa Jafari - tech stack - React.js" />
+                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React query" src="/assets/imgs/Tech-stack/react-query.jpg" alt="issa Jafari - tech stack - react quey" />
               </li>
               <li className="flex gap-4 text-white text-sm font-semibold mb-2">
                 <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Tailwind CSS" src="/assets/imgs/Tech-stack/tailwind.webp" alt="issa Jafari - tech stack - Tailwind CSS" />
                 <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="TypeScript" src="/assets/imgs/Tech-stack/ts.webp" alt="issa Jafari - tech stack - TypeScript" />
+                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Zustand" src="/assets/imgs/Tech-stack/zustand.jpeg" alt="issa Jafari - tech stack - Zustand" />
               </li>
             </ul>
 
