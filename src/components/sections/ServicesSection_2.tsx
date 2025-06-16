@@ -20,7 +20,7 @@ export default function ServicesSection() {
               </svg>
 
               <ul className="col-span-5 row-start-2 text-base font-semibold mt-5 leading-7">
-                <li>▶️ Site web dynamique </ li> 
+                <li>▶️ Site web dynamique </ li>
                 <li>▶️ design responsive </ li>
                 <li>▶️ Component-Driven Development </ li>
                 <li>▶️ Performance Optimization </ li>
@@ -34,18 +34,37 @@ export default function ServicesSection() {
             </div>
 
 
-            <ul className="list-none grid justify-items-center ---bg-gradient-to-b from-transparent to-black/50 px-6 pb-6">
-              <li className="flex gap-4 text-white text-sm font-semibold mb-2">
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="SCSS" src="/assets/imgs/Tech-stack/scss.jpg" alt="issa Jafari - tech stack - SCSS" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React.js" src="/assets/imgs/Tech-stack/react.webp" alt="issa Jafari - tech stack - React.js" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React query" src="/assets/imgs/Tech-stack/react-query.jpg" alt="issa Jafari - tech stack - react quey" />
+            <ul className="list-none grid justify-items-center bg-gradient-to-b from-transparent to-black/50 px-6 pb-6">
+              <li className="flex gap-5 text-white text-sm font-semibold mb-2">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="SCSS" src="/assets/imgs/Tech-stack/scss.jpg" alt="SCSS" />
+                  <span className="mt-1.5">SCSS</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React.js" src="/assets/imgs/Tech-stack/react.webp" alt="React.js" />
+                  <span className="mt-1.5">React.js</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="React Query" src="/assets/imgs/Tech-stack/react-query.jpg" alt="React Query" />
+                  <span className="text-xs mt-1.5">React Query</span>
+                </div>
               </li>
-              <li className="flex gap-4 text-white text-sm font-semibold mb-2">
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Tailwind CSS" src="/assets/imgs/Tech-stack/tailwind.webp" alt="issa Jafari - tech stack - Tailwind CSS" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="TypeScript" src="/assets/imgs/Tech-stack/ts.webp" alt="issa Jafari - tech stack - TypeScript" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Zustand" src="/assets/imgs/Tech-stack/zustand.jpeg" alt="issa Jafari - tech stack - Zustand" />
+              <li className="flex gap-5 text-white text-sm font-semibold mb-2">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Tailwind CSS" src="/assets/imgs/Tech-stack/tailwind.webp" alt="Tailwind CSS" />
+                  <span className="text-xs mt-1.5">Tailwind CSS</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="TypeScript" src="/assets/imgs/Tech-stack/ts.webp" alt="TypeScript" />
+                  <span className="text-xs mt-1.5">TypeScript</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Zustand" src="/assets/imgs/Tech-stack/zustand.jpeg" alt="Zustand" />
+                  <span className="mt-1.5">Zustand</span>
+                </div>
               </li>
             </ul>
+
 
 
           </div>
@@ -74,17 +93,36 @@ export default function ServicesSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
               </svg> */}
             </div>
-            <ul className="list-none grid justify-items-center ---bg-gradient-to-b from-transparent to-black/50 px-6 pb-6">
-              <li className="flex gap-4 text-white text-sm font-semibold mb-2">
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="PHP" src="/assets/imgs/Tech-stack/php.png" alt="issa Jafari - tech stack - PHP" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50  " title="Node.js" src="/assets/imgs/Tech-stack/nodejs.png" alt="issa Jafari - tech stack - Node.js" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Java" src="/assets/imgs/Tech-stack/java.webp" alt="issa Jafari - tech stack - Java" />
+            <ul className="list-none grid justify-items-center bg-gradient-to-b from-transparent to-black/50 px-6 pb-6">
+              <li className="flex gap-5 text-white text-sm font-semibold mb-2">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="PHP" src="/assets/imgs/Tech-stack/php.png" alt="PHP" />
+                  <span className="mt-1.5">PHP</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Node.js" src="/assets/imgs/Tech-stack/nodejs.png" alt="Node.js" />
+                  <span className="mt-1.5">Node.js</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Java" src="/assets/imgs/Tech-stack/java.webp" alt="Java" />
+                  <span className="mt-1.5">Java</span>
+                </div>
               </li>
-              <li className="flex gap-4 text-white text-sm font-semibold mb-2">
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Symfony" src="/assets/imgs/Tech-stack/symfony.png" alt="issa Jafari - tech stack - Symfony" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Nest.js" src="/assets/imgs/Tech-stack/nestjs.png" alt="issa Jafari - tech stack - Nest.js" />
-                <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Nest.js" src="/assets/imgs/Tech-stack/springboot.svg" alt="issa Jafari - tech stack - Spring Boot" />
+              <li className="flex gap-5 text-white text-sm font-semibold mb-2">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Symfony" src="/assets/imgs/Tech-stack/symfony.png" alt="Symfony" />
+                  <span className="mt-1.5">Symfony</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Nest.js" src="/assets/imgs/Tech-stack/nestjs.png" alt="Nest.js" />
+                  <span className="mt-1.5">Nest.js</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="rounded-2xl aspect-square w-16 drop-shadow-xl/50" title="Spring Boot" src="/assets/imgs/Tech-stack/springboot.svg" alt="Spring Boot" />
+                  <span className="mt-1.5">Spring Boot</span>
+                </div>
               </li>
+
             </ul>
 
           </div>

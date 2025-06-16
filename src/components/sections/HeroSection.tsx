@@ -9,8 +9,8 @@ export default function HeroSection() {
     <>
       <section className="mb-20">
         {/* <h2 className="my-sm:text-[clamp(2rem,80vw,3.8rem)] sm:text-5xl text-4xl font-bold mb-4"> */}
-        <h2 className="text-4xl my-xs:text-[40px] md:text-6xl lg:text-7xl  font-bold mb-4 text-gray-400">
-          Développeur  Web <br /> <span className="text-yellow-400">JavaScript</span>
+        <h2 className="text-4xl my-xs:text-[40px] md:text-6xl lg:text-7xl  font-bold mb-4 --text-gray-400">
+          Développeur  Web <br /> <span className="text-yellow-400 hidden">JavaScript</span>
         </h2>
 
         <p className="sm:mt-13 mt-5 sm:text-2xl text-xl">
@@ -21,19 +21,22 @@ export default function HeroSection() {
 
         <div className="grid sm:justify-between grid-cols-1 sm:grid-cols-3 --my-lg:gap-25 ---my-sm:gap-15 gap-1 mt-5">
 
-          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
-            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">2024</h3>
-            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Développeur Web & <br /> Web Mobile <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac+2</span></p>
+          <div className="sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">Vision 🔍</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold"> Développer utile </p>
+            <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">J’aime aller plus loin que la technique : améliorer des détails qui comptent pour l'utilisateur.</span>
           </div>
 
-          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
-            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">2025</h3>
-            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Concepteur Développeur <br /> d’Application <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac +3/4</span></p>
+          <div className="sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">Méthode 🧭</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Autonomie et méthode </p>
+            <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Du besoin client au livrable, je structure, j’échange, je livre — sans flou ni perte de temps.</span>
           </div>
 
-          <div className="flex justify-between sm:block sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
-            <h3 className="sm:order-1 order-2 text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white">Bientôt...</h3>
-            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Développeur Full-Stack <br /> Angulare + Java <br /> <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Bac +5</span></p>
+          <div className="sm:p-0 p-3 sm:bg-transparent bg-[#4747448a] sm:rounded-none rounded-md">
+            <h3 className="text-xl sm:text-3xl font-bold sm:mt-6 mb-3 text-gray-300 sm:text-white"> Relation 🤝</h3>
+            <p className="sm:order-2 order-1 text-lg sm:text-base font-bold">Construire avec les autres</p>
+            <span className="text-sm sm:text-base text-gray-300 sm:text-white font-normal">Je suis à l’écoute, curieux et sérieux. Pour moi, un bon projet naît toujours d’une bonne collaboration.</span>
           </div>
         </div>
 

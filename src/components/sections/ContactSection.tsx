@@ -127,6 +127,8 @@ export default function ContactSection() {
               <option value="">Choisir un type de travail</option>
               <option value="single-work">Travail unique</option>
               <option value="hire">Embauche</option>
+              <option value="consulting">Conseil 💡</option>
+              <option value="coaching">Tutorat / Coaching 🎓</option>
             </select>
             <p className="text-red-500 text-sm">{errors.workType?.message}</p>
           </div>
