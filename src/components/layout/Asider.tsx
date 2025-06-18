@@ -24,10 +24,10 @@ export default function Asider() {
 
                     <div className="sm:grid gap-1 my-15:gap-2.5">
                         {/* Email */}
-                        <div className="flex items-center gap-2 mt-2">
+                        <a href="mailto:isajafari76@gmail.com" className="flex items-center gap-2 mt-2">
                             <EnvelopeIcon className="w-5 h-5 --text-my-theme-icon" />
-                            <p className="text-sm"><a href="mailto:isajafari76@gmail.com">isajafari76@gmail.com</a></p>
-                        </div>
+                            <p className="text-sm">isajafari76@gmail.com</p>
+                        </a>
 
                         {/* Phone Number */}
                         {/* <div className="flex items-center gap-2 mt-2">
@@ -36,16 +36,16 @@ export default function Asider() {
                         </div> */}
 
                         {/* Linkedin */}
-                        <div className="flex items-center gap-2 mt-2">
+                        <a href="https://www.linkedin.com/in/issa-jafari" className="flex items-center gap-2 mt-2">
                             <img src="/assets/icone/linkedin.png" alt="" className="w-4 h-4 ml-0.5" />
-                            <p className="text-sm"><a href="https://www.linkedin.com/in/issa-jafari" target="_blank">www.linkedin.com/in/issa-jafari</a></p>
-                        </div>
+                            <p className="text-sm">www.linkedin.com/in/issa-jafari</p>
+                        </a>
 
                         {/* Github */}
-                        <div className="flex items-center gap-2 mt-2">
+                        <a href="https://github.com/Issa150" className="flex items-center gap-2 mt-2">
                             <img src="/assets/icone/github.png" alt="" className="w-6 h-6 -ml-0.5" />
-                            <p className="text-sm"><a href="https://github.com/Issa150" target="_blank">https://github.com/Issa150</a></p>
-                        </div>
+                            <p className="text-sm">https://github.com/Issa150</p>
+                        </a>
 
                         {/* City */}
                         <div className="flex items-center gap-2 mt-2">
@@ -53,12 +53,10 @@ export default function Asider() {
                             <p className="text-sm">Paris, France</p>
                         </div>
                         {/* VC */}
-                        <div className="mt-2">
-                            <a href="/assets/CV- Issa JAFARI- développeur Full-Stack.pdf" className="flex items-center gap-2 " download>
-                                <DocumentArrowDownIcon className="h-6 w-6 --text-my-theme-icon" />
-                                <p className="text-sm">CV</p>
-                            </a>
-                        </div>
+                        <a href="/assets/CV- Issa JAFARI- développeur Full-Stack.pdf" download className="mt-2 flex gap-2">
+                            <DocumentArrowDownIcon className="h-6 w-6 --text-my-theme-icon" />
+                            <p className="text-sm">CV</p>
+                        </a>
                     </div>
                 </div>
             </div>
