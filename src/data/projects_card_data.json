@@ -1,0 +1,46 @@
+[
+  {
+    "id": "joinly",
+    "title": "Joinly",
+    "year": "2025",
+    "description": "Plateforme de partage d'événements collaborative.",
+    "imgSrc": "/assets/imgs/projects/Joinly/home-page.png",
+    "imgAlt": "Issa Jafari - < aLT /> foramtion projet fin formation",
+    "techStackPrimary": ["React.Js", "TypeScript", "Nest.Js"],
+    "techStackSecondary": ["Docker"],
+    "previwLink" : ""
+  },
+  {
+    "id": "alumni",
+    "title": "Alumni",
+    "year": "2024",
+    "description": "Plateforme Alumni pour le suivi des anciens apprenants.",
+    "imgSrc": "/assets/imgs/projects/Alumni/home-page.png",
+    "imgAlt": "Issa Jafari - project 10 mention web, 10mentionweb",
+    "techStackPrimary": ["Twig", "Symfony 8"],
+    "techStackSecondary": ["MySQL"],
+    "previwLink" : ""
+  },
+  {
+    "id": "ideapedia",
+    "title": "Idea Pedia",
+    "year": "2024",
+    "description": "Plateforme de partage d'articles informatifs.",
+    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page.png",
+    "imgAlt": "Issa Jafari - Colombbus - rojet fin fromation",
+    "techStackPrimary": ["HTML 5", "CSS 3", "JavaScript"],
+    "techStackSecondary": ["PHP", "MySQL"],
+    "previwLink" : ""
+  },
+  {
+    "id": "facebook-clone",
+    "title": "FaceBook (clone)",
+    "year": "2023",
+    "description": "Mon premier grand projet réalisé avec les technologies fondamentales du web.",
+    "imgSrc": "/assets/imgs/projects/FaceBook-clone/home-page.png",
+    "imgAlt": "Issa Jafari - rojet front-end",
+    "techStackPrimary": ["HTML 5", "CSS 3"],
+    "techStackSecondary": ["JavaScript"],
+    "previwLink" : "https://socialbookapplis.netlify.app"
+  }
+]

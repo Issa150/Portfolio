@@ -9,7 +9,7 @@ import { lazy } from 'react'
 const ContactSection = lazy(() => import('../../components/sections/ContactSection'))
 const HeroSection = lazy(() => import('../../components/sections/HeroSection'))
 const ProjectsSection = lazy(() => import('../../components/sections/ProjectsSection'))
-const ServicesSection = lazy(() => import('../../components/sections/ServicesSection_2'))
+const ServicesSection = lazy(() => import('../../components/sections/ServicesSection'))
 
 
 export default function HomePage() {

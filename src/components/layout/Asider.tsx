@@ -37,19 +37,19 @@ export default function Asider() {
 
                         {/* Linkedin */}
                         <div className="flex items-center gap-2 mt-2">
-                            <img src="/assets/icone/linkedin.png" alt="" className="w-4 h-4" />
+                            <img src="/assets/icone/linkedin.png" alt="" className="w-4 h-4 ml-0.5" />
                             <p className="text-sm"><a href="https://www.linkedin.com/in/issa-jafari" target="_blank">www.linkedin.com/in/issa-jafari</a></p>
                         </div>
 
                         {/* Github */}
                         <div className="flex items-center gap-2 mt-2">
-                            <img src="/assets/icone/github.png" alt="" className="w-5 h-5" />
+                            <img src="/assets/icone/github.png" alt="" className="w-6 h-6 -ml-0.5" />
                             <p className="text-sm"><a href="https://github.com/Issa150" target="_blank">https://github.com/Issa150</a></p>
                         </div>
 
                         {/* City */}
                         <div className="flex items-center gap-2 mt-2">
-                            <MapPinIcon className="w-5 h-5 --text-my-theme-icon" />
+                            <MapPinIcon className="w-6 h-6 -ml-0.5 --text-my-theme-icon" />
                             <p className="text-sm">Paris, France</p>
                         </div>
                         {/* VC */}

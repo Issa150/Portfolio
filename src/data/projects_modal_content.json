@@ -1,0 +1,106 @@
+{
+  "joinly": {
+    "id": "joinly",
+    "title": "Joinly",
+    "imgSrc": "/assets/imgs/projects/Joinly/home-page.png",
+    "fullDetails": "Joinly est une plateforme innovante de partage d'événements, conçue pour connecter les utilisateurs autour de leurs passions et faciliter l'organisation collaborative. Développé comme un projet de fin de formation, il met en œuvre des technologies modernes et des bonnes pratiques de développement pour offrir une expérience utilisateur fluide et intuitive. L'application gère la création, la découverte, l'inscription aux événements, ainsi que des fonctionnalités sociales et de notification.",
+    "features": [
+      "Création et gestion d'événements avec détails personnalisables.",
+      "Filtrage et recherche avancée d'événements par catégorie, date et lieu.",
+      "Système d'inscription et de gestion des participants.",
+      "Profils utilisateurs personnalisés et tableau de bord intuitif.",
+      "Notifications en temps réel pour les mises à jour d'événements.",
+      "Intégration de paiement sécurisé (Stripe)."
+    ],
+    "links": [
+      { "type": "Preview", "url": "" },
+      { "type": "GitHub (Frontend)", "url": "https://github.com/Issa150/Joinly-front" },
+      { "type": "GitHub (Backend)", "url": "https://github.com/Issa150/Joinly-back" }
+    ],
+    "architecture": "L'application suit une architecture microservices. Le frontend est une Single Page Application (SPA) en React/TypeScript, communiquant avec un backend RESTful basé sur Nest.Js. Une base de données MySQL persistante est utilisée, et l'ensemble est conteneurisé avec Docker pour faciliter le déploiement et la gestion. Une passerelle API est en place pour router les requêtes.",
+    "collaboration": "Projet collaboratif réalisé en équipe de 3 développeurs.",
+    "techStackPrimary": ["React.Js", "TypeScript", "Nest.Js", "MySQL", "Docker"],
+    "techStackSecondary": ["Tailwind CSS", "useQuery()"],
+    "diagramsImgs": [],
+    "diagramsDescription": "L'architecture de Joinly est basée sur une approche microservices, avec un frontend en React/TypeScript et un backend en Nest.Js. La base de données MySQL est utilisée pour stocker les données des utilisateurs et des événements. Le projet utilise Docker pour la conteneurisation, facilitant le déploiement et la scalabilité.",
+    "libraries": [
+      "React Query", "Axios", "React Router DOM", "Formik & Yup",  "Material Tailwind"
+    ]
+  },
+  "alumni": {
+    "id": "alumni",
+    "title": "Alumni",
+    "imgSrc": "/assets/imgs/projects/Alumni/home-page.png",
+    "fullDetails": "Alumni est une plateforme dédiée au suivi des anciens apprenants. Elle permet de maintenir le contact, de partager des opportunités et de créer un réseau professionnel. Ce projet a été construit avec Twig pour les templates, Symfony 8 pour le framework backend, et utilise MySQL comme base de données. L'interface utilisateur est stylisée avec Bootstrap 5.",
+    "features": [
+      "Gestion des profils utilisateurs avec informations personnelles et professionnelles.",
+      "Système de connexion et d'inscription sécurisé.",
+      "Partage d'opportunités d'emploi et de projets.",
+      "Partage d'opportunités de fromation et des certifications.",
+      "Interface utilisateur responsive et intuitive.",
+      "Interface administrateur pour la gestion des utilisateurs et des contenus.",
+      "Notifications/l'envois du mail pour les mises à jour importantes et les nouvelles opportunités."
+
+    ],
+    "links": [
+      { "type": "Preview", "url": "" },
+      { "type": "GitHub", "url": "" }
+    ],
+    "architecture": "Symfony 8 est utilisé comme framework backend, avec Twig pour le rendu des templates. La base de données MySQL gère les données des utilisateurs et des opportunités. L'application suit une architecture MVC (Modèle-Vue-Contrôleur) pour séparer la logique métier de la présentation.",
+    "collaboration": "4 développeurs ont collaboré sur ce projet, chacun ayant des rôles spécifiques dans le développement backend, la création de templates, et la gestion de la base de données.",
+    "techStackPrimary": ["Twig", "Symfony 8", "MySQL"],
+    "techStackSecondary": ["Bootstrap 5"],
+    "diagramsImgs": [],
+    "diagramsDescription": "",
+    "libraries": []
+  },
+  "ideapedia": {
+    "id": "ideapedia",
+    "title": "Idea Pedia",
+    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page.png",
+    "fullDetails": "Idea Pedia est une plateforme de partage d'articles informatifs. C'est un projet robuste qui démontre une maîtrise des technologies web fondamentales, incluant HTML5, CSS3, et JavaScript pour le frontend, avec PHP et MySQL pour la logique côté serveur et la gestion des données. L'aspect visuel est amélioré par l'utilisation de SCSS et Bootstrap pour un design moderne et responsive.",
+    "features": [
+      "Création et gestion d'articles avec éditeur de texte enrichi.",
+      "Système de commentaires pour interagir avec les articles.",
+      "Recherche et filtrage d'articles par catégorie et mots-clés.",
+      "Interface utilisateur responsive et intuitive.",
+      "Gestion des utilisateurs avec rôles administrateur et utilisateur."
+    ],
+    "links": [
+      { "type": "Preview", "url": "" },
+      { "type": "GitHub", "url": "https://github.com/Issa150/Project-Blog-1"}
+    ],
+    "architecture": "PHP et MySQL sont utilisés pour le backend, avec la methode POO pour séparer la logique métier et connection et interaction avec la base do donéee. Le frontend est construit avec HTML5, CSS3, et JavaScript, et utilise SCSS pour une meilleure gestion des styles.",
+    "collaboration": "",
+    "techStackPrimary": ["HTML 5", "CSS 3", "JavaScript", "PHP", "MySQL"],
+    "techStackSecondary": ["SCSS "],
+    "diagramsImgs": [],
+    "diagramsDescription": "",
+    "libraries": ["Swiper JS", "Tinymce"]
+  },
+  "facebook-clone": {
+    "id": "facebook-clone",
+    "title": "FaceBook (clone)",
+    "imgSrc": "/assets/imgs/projects/FaceBook-clone/home-page.png",
+    "fullDetails": "Ce clone de Facebook représente mon premier grand projet, une étape clé dans mon apprentissage du développement web. Il a été entièrement réalisé en utilisant les technologies fondamentales du web : HTML5 pour la structure, CSS3 pour le style, et JavaScript pour l'interactivité. Ce projet m'a permis de solidifier mes bases et de comprendre le fonctionnement d'une application web complexe de bout en bout.",
+    "features": [
+      "Création de comptes utilisateurs.",
+      "Publication de statuts et partage de contenu multimédia.",
+      "Système de like sur les publications.",
+      "Interface utilisateur responsive et intuitive.",
+      "Dark mode et light mode.",
+      "Système de recherche d'amis."
+    ],
+    "links": [
+      { "type": "Preview", "url": "https://socialbookapplis.netlify.app" },
+      { "type": "GitHub", "url": "https://github.com/Issa150/FaceBook-Clone"}
+    ],
+    "architecture": "HTML, CSS, et JavaScript sont utilisés pour construire l'application.",
+    "collaboration": "",
+    "techStackPrimary": ["HTML 5", "CSS 3", "JavaScript"],
+    "techStackSecondary": [],
+    "diagramsImgs": [],
+    "diagramsDescription": "",
+    "libraries": []
+  }
+}

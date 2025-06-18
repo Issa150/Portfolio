@@ -48,8 +48,7 @@ export default function NavBar() {
       
       <ul className="relative my-md:flex flex justify-center sm:gap-4 sm:max-sm:gap-0 px-0 list-none mx-0">
         {/* Indicator */}
-        <div
-          className="absolute top-0 left-0 h-full backdrop-blur-sm bg-linear-to-b from-[rgba(255,255,255,.05)] to-[rgba(255,255,255,.1)] rounded-full transition-all duration-400 ease-in-out shadow-my-sm"
+        <div className="absolute top-0 left-0 h-full backdrop-blur-sm bg-linear-to-b from-[rgba(255,255,255,.05)] to-[rgba(255,255,255,.1)] rounded-full transition-all duration-400 ease-in-out shadow-my-sm -z-10"
           style={indicatorStyle}
         ></div>
 
