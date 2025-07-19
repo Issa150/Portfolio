@@ -57,7 +57,7 @@
   "ideapedia": {
     "id": "ideapedia",
     "title": "Idea Pedia",
-    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page.png",
+    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page-min.png",
     "fullDetails": "Idea Pedia est une plateforme de partage d'articles informatifs. C'est un projet robuste qui démontre une maîtrise des technologies web fondamentales, incluant HTML5, CSS3, et JavaScript pour le frontend, avec PHP et MySQL pour la logique côté serveur et la gestion des données. L'aspect visuel est amélioré par l'utilisation de SCSS et Bootstrap pour un design moderne et responsive.",
     "features": [
       "Création et gestion d'articles avec éditeur de texte enrichi.",
