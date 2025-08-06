@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This space showcases my work as a **frontend & backend developer**, highlighting my passion for crafting elegant and scalable digital experiences.  
 
-🔗 **Live Demo:** [issa-jafari.netlify.app](https://issajafari.app)  
+🔗 **Live Demo:** [issajafari.com](https://issajafari.com)  
 
 ## 🚀 Tech Stack  
 My portfolio is built using modern web technologies, ensuring **performance, scalability, and responsiveness**:  
