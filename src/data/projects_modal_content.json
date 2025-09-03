@@ -2,7 +2,8 @@
   "joinly": {
     "id": "joinly",
     "title": "Joinly",
-    "imgSrc": "/assets/imgs/projects/Joinly/home-page.png",
+    "thumbnail": "/assets/imgs/projects/Joinly/thumbnail.jpg",
+    "imgSrc": "/assets/imgs/projects/Joinly/home-page.jpg",
     "fullDetails": "Joinly est une plateforme innovante de partage d'événements, conçue pour connecter les utilisateurs autour de leurs passions et faciliter l'organisation collaborative. Développé comme un projet de fin de formation, il met en œuvre des technologies modernes et des bonnes pratiques de développement pour offrir une expérience utilisateur fluide et intuitive. L'application gère la création, la découverte, l'inscription aux événements, ainsi que des fonctionnalités sociales et de notification.",
     "features": [
       "Création et gestion d'événements avec détails personnalisables.",
@@ -30,7 +31,8 @@
   "alumni": {
     "id": "alumni",
     "title": "Alumni",
-    "imgSrc": "/assets/imgs/projects/Alumni/home-page.png",
+    "thumbnail": "/assets/imgs/projects/Alumni/thumbnail.jpg",
+    "imgSrc": "/assets/imgs/projects/Alumni/home-page.jpg",
     "fullDetails": "Alumni est une plateforme dédiée au suivi des anciens apprenants. Elle permet de maintenir le contact, de partager des opportunités et de créer un réseau professionnel. Ce projet a été construit avec Twig pour les templates, Symfony 8 pour le framework backend, et utilise MySQL comme base de données. L'interface utilisateur est stylisée avec Bootstrap 5.",
     "features": [
       "Gestion des profils utilisateurs avec informations personnelles et professionnelles.",
@@ -57,7 +59,8 @@
   "ideapedia": {
     "id": "ideapedia",
     "title": "Idea Pedia",
-    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page-min.png",
+    "thumbnail": "/assets/imgs/projects/IdeaPedia/thumbnail.jpg",
+    "imgSrc": "/assets/imgs/projects/IdeaPedia/home-page.jpg",
     "fullDetails": "Idea Pedia est une plateforme de partage d'articles informatifs. C'est un projet robuste qui démontre une maîtrise des technologies web fondamentales, incluant HTML5, CSS3, et JavaScript pour le frontend, avec PHP et MySQL pour la logique côté serveur et la gestion des données. L'aspect visuel est amélioré par l'utilisation de SCSS et Bootstrap pour un design moderne et responsive.",
     "features": [
       "Création et gestion d'articles avec éditeur de texte enrichi.",
@@ -81,7 +84,8 @@
   "facebook-clone": {
     "id": "facebook-clone",
     "title": "FaceBook (clone)",
-    "imgSrc": "/assets/imgs/projects/FaceBook-clone/home-page.png",
+    "thumbnail": "/assets/imgs/projects/FaceBook-clone/thumbnail.jpg",
+    "imgSrc": "/assets/imgs/projects/FaceBook-clone/home-page.jpg",
     "fullDetails": "Ce clone de Facebook représente mon premier grand projet, une étape clé dans mon apprentissage du développement web. Il a été entièrement réalisé en utilisant les technologies fondamentales du web : HTML5 pour la structure, CSS3 pour le style, et JavaScript pour l'interactivité. Ce projet m'a permis de solidifier mes bases et de comprendre le fonctionnement d'une application web complexe de bout en bout.",
     "features": [
       "Création de comptes utilisateurs.",

@@ -21,6 +21,7 @@ import projectsModalContent from '../../data/projects_modal_content.json';
 interface ProjectModalContent {
   id: string;
   title: string;
+  thumbnail: string;
   imgSrc: string;
   fullDetails: string;
   features: string[];
@@ -75,7 +76,7 @@ export default function ProjectsSection() {
         <div className="mt-6 grid gap-5 sm:gap-0">
           {projectsCardData.map((project) => (
             <div key={project.id} className="grid grid-cols-[auto_1fr] gap-3 hover:bg-[#4747448a] hover:translate-x-1 transition duration-300 group rounded-lg sm:p-4 p-0 mb-4">
-              <img className="max-w-24 aspect-[2/3] h-full object-cover object-top rounded" loading="lazy" src={project.imgSrc} alt={project.imgAlt} />
+              <img className="max-w-24 aspect-[2/3] h-full object-cover object-top rounded" loading="lazy" src={project.thumbnail} alt={project.imgAlt} />
               <div className="grid">
                 <div className="flex justify-between items-center">
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
