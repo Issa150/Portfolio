@@ -104,12 +104,12 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 my-sm:grid-cols-2 gap-4">
             <div className="form-control">
               <label className="label">Nom</label>
-              <input {...register("name")} type="text" className="input input-primary w-full bg-my-theme border-my-theme-border" />
+              <input {...register("name")} type="text" placeholder="Nom..." className="input input-primary w-full bg-my-theme border-my-theme-border" />
               <p className="text-red-500 text-sm">{errors.name?.message}</p>
             </div>
             <div className="form-control">
               <label className="label">Email</label>
-              <input {...register("email")} type="email" className="input input-primary w-full bg-my-theme border-my-theme-border" />
+              <input {...register("email")} type="email" placeholder="Email..." className="input input-primary w-full bg-my-theme border-my-theme-border" />
               <p className="text-red-500 text-sm">{errors.email?.message}</p>
               <ValidationError
                 prefix="Email"
@@ -149,7 +149,7 @@ export default function ContactSection() {
           {/* Message */}
           <div className="form-control">
             <label className="label">Message</label>
-            <textarea {...register("message")} className="textarea textarea-primary w-full bg-my-theme border-my-theme-border" rows={4}></textarea>
+            <textarea {...register("message")} placeholder="Votre message..." className="textarea textarea-primary w-full bg-my-theme border-my-theme-border" rows={4}></textarea>
             <p className="text-red-500 text-sm">{errors.message?.message}</p>
             <ValidationError
               prefix="Message"
@@ -162,6 +162,7 @@ export default function ContactSection() {
           {/* Submit Button */}
           <button
             type="submit"
+            name="submit"
             className="btn btn-primary w-full"
             disabled={formspreeState.submitting}
           >

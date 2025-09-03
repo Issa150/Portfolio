@@ -105,7 +105,7 @@ export default function ProjectsSection() {
                     En savoir plus
                   </button>
                   {project.previwLink && project.previwLink.trim() !== '' && (
-                    <a href={project.previwLink} target="_blank" className="--absolute sm:bottom-0 bottom-7 sm:right-0.5 right-1.5 group-hover:bg-green-600 sm:bg-transparent bg-[#474744] group-hover:shadow-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition duration-300 p-2 rounded-full grid place-center ">
+                    <a href={project.previwLink} target="_blank" rel="noopener noreferrer" aria-label="Open project preview in new tab" className="--absolute sm:bottom-0 bottom-7 sm:right-0.5 right-1.5 group-hover:bg-green-600 sm:bg-transparent bg-[#474744] group-hover:shadow-sm group-hover:-translate-y-1 group-hover:translate-x-1 transition duration-300 p-2 rounded-full grid place-center ">
                       <ArrowUpRightIcon className="h-6 w-6 group-hover:text-white sm:text-gray-500 text-green-600 ml-auto" />
                     </a >
                   )}
